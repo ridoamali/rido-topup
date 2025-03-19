@@ -13,32 +13,32 @@ import Image from "next/image";
 const heroItems = [
   {
     id: 1,
-    title: "Ikuti Event Tokogame Bagi-Bagi THR Hingga 900.000",
-    image: "https://ext.same-assets.com/1739547084/1158880323.jpeg",
+    title: "Ikuti Event Ridotopup Bagi-Bagi THR Hingga 900.000",
+    image: "herocarousel1.png",
     date: "16 Mar 2025",
   },
   {
     id: 2,
     title: "Garena Kerjasama dengan PSSI, Hadirkan Jersey Timnas Indonesia di Free...",
-    image: "https://ext.same-assets.com/441690081/1161492886.jpeg",
+    image: "herocarousel2.jpg",
     date: "14 Mar 2025",
   },
   {
     id: 3,
     title: "Inilah Daftar Kode Redeem FF Terbaru Maret 2025",
-    image: "https://ext.same-assets.com/3254232296/1010982140.jpeg",
+    image: "herocarousel3.jpeg",
     date: "12 Mar 2025",
   },
   {
     id: 4,
     title: "Cara Mendapatkan Voice Pack Melody JKT48 di HOK",
-    image: "https://ext.same-assets.com/2253865765/1693565519.jpeg",
+    image: "herocarousel4.jpg",
     date: "10 Mar 2025",
   },
   {
     id: 5,
     title: "MPL ID Season 15 Dimulai: Pertarungan Sengit Para Raksasa Mobile Legen...",
-    image: "https://ext.same-assets.com/3280413333/880987413.jpeg",
+    image: "herocarousel5.jpg",
     date: "07 Mar 2025",
   },
 ];

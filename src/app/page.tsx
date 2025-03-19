@@ -3,6 +3,7 @@ import HeroCarousel from "@/components/HeroCarousel";
 import GameSection from "@/components/GameSection";
 import CategorySection from "@/components/CategorySection";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 // Game data
 const topUpGames = [

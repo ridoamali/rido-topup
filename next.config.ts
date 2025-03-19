@@ -32,6 +32,8 @@ const nextConfig = {
         pathname: "/**",
       },
     ],
+    loader: 'default',
+    path: '/src/img/',
   },
 };
 

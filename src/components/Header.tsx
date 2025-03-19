@@ -16,7 +16,7 @@ export default function Header() {
           <div className="relative h-6 w-6">
             <Image
               src="https://ext.same-assets.com/1361958852/1331984221.png"
-              alt="Tokogame Logo"
+              alt="Ridotopup Logo"
               fill
               className="object-contain"
             />
@@ -68,8 +68,8 @@ export default function Header() {
           <Link href="/">
             <div className="relative h-9 w-28">
               <Image
-                src="https://ext.same-assets.com/1630754802/4131509715.png"
-                alt="Tokogame Logo"
+                src="sitelogo.png"
+                alt="Ridotopup Logo"
                 fill
                 className="object-contain"
               />
@@ -86,7 +86,7 @@ export default function Header() {
         <div className="relative">
           <input
             type="text"
-            placeholder="Cari di Tokogame..."
+            placeholder="Cari di Ridotopup..."
             className="pl-8 pr-3 py-2 rounded-md border border-gray-200 text-sm w-full md:w-[250px]"
           />
           <svg
