@@ -1,9 +1,12 @@
+"use client"
+
+import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import HeroCarousel from "@/components/HeroCarousel";
 import GameSection from "@/components/GameSection";
 import CategorySection from "@/components/CategorySection";
 import Footer from "@/components/Footer";
-import Image from "next/image";
+import {motion, AnimatePresence} from "framer-motion";
 
 // Game data
 const topUpGames = [
@@ -154,34 +157,72 @@ const eMoney = [
 ];
 
 export default function Home() {
+  const [, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    return () => setMounted(false);
+  }, []);
+
   return (
-    <main>
+    <AnimatePresence>
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <Header />
       <HeroCarousel />
       
-      <GameSection
-        title="TOP UP GAME"
-        games={topUpGames}
-        viewAllLink="/topup"
-      />
+      <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
+        >
+          <GameSection
+            title="TOP UP GAME"
+            games={topUpGames}
+            viewAllLink="/topup"
+          />
+        </motion.div>
       
-      <GameSection
-        title="VOUCHER"
-        games={vouchers}
-        viewAllLink="/voucher"
-      />
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+        >
+          <GameSection
+            title="VOUCHER"
+            games={vouchers}
+            viewAllLink="/voucher"
+          />
+        </motion.div>
       
-      <CategorySection
-        title="PULSA"
-        items={pulsaProviders}
-      />
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.7, duration: 0.5 }}
+        >
+          <CategorySection
+            title="PULSA"
+            items={pulsaProviders}
+          />
+        </motion.div>
       
-      <CategorySection
-        title="E-MONEY"
-        items={eMoney}
-      />
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.9, duration: 0.5 }}
+        >
+          <CategorySection
+            title="E-MONEY"
+            items={eMoney}
+          />
+        </motion.div>
+
       
-      <Footer />
-    </main>
+        <Footer />
+      </motion.main>
+    </AnimatePresence>
   );
 }
